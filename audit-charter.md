@@ -7,7 +7,7 @@ This introduces challenges for auditability, accountability, and transparency, i
 * Difficulty attributing actions to a specific user, agent instance, or delegation context
 * Loss of visibility across long-running or distributed workflows
 * Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
-* Cross-domain interactions lack interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions
+* Lack of interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions across domains
 
 Agents participate in two distinct classes of interactions that must be audited:
 
@@ -22,7 +22,11 @@ Auditing must also distinguish between user, agent, and service identities, and 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes:
+
+* Enabling attribution of actions to a specific user, agent instance, or delegation context
+* Capturing delegation chains, authorization state over time, and identity transitions
+* Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
 
