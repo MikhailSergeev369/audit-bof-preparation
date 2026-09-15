@@ -9,11 +9,6 @@ This introduces challenges for auditability, accountability, and transparency, i
 * Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
 * Lack of interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions across domains
 
-Agents participate in two distinct classes of interactions that must be audited:
-
-* User-facing interactions, such as prompts, conversations, and approvals, capturing user intent and human-in-the-loop decisions
-* System-facing interactions, such as API calls, tool usage, and delegation to other agents or services
-
 Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
 
 Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
@@ -22,14 +17,13 @@ Auditing must also distinguish between user, agent, and service identities, and 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes:
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across agent interactions. This includes:
 
 * Enabling attribution of actions to a specific user, agent instance, or delegation context
 * Capturing delegation chains, authorization state over time, and identity transitions
 * Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
-
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
 Further, while the entities of a complex agents or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
