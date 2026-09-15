@@ -44,7 +44,7 @@ One or more Standards Track RFC(s) that identify and reuse existing or specify n
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 
 3. **Protocol Extensions or Profiles**
-One or more Standards Track RFCs specifying profiles of, extensions to, or embodiment into existing IETF protocols (e.g., HTTP headers, OAuth token formats, attestation workflows, or claims sets in other data items) to convey audit-related information.
+One or more Standards Track RFCs specifying profiles of, extensions to, or embodiments into existing IETF protocols (e.g., HTTP headers, OAuth token formats, attestation workflows, or claims sets in other data items) to convey audit-related information.
 Whether this work is done in this working group or the respective protocol maintenance group depends on the protocols and needs to be considered on a case by case basis.
 The working group may also define protocol-independent data representations intended for use by non-IETF logging, telemetry, or audit systems, while avoiding standardization of those external systems themselves.
 
