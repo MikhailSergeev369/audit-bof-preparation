@@ -14,18 +14,17 @@ Agents participate in two distinct classes of interactions that must be audited:
 * User-facing interactions, such as prompts, conversations, and approvals, capturing user intent and human-in-the-loop decisions
 * System-facing interactions, such as API calls, tool usage, and delegation to other agents or services
 
-Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
+Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains while also preserving user privacy.
 
 Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
 Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclose such that it remains interpretable across systems without shared assumptions.
 
 ## Scope and Goals
-The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
+The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols, enabling collect and correlation of different kinds of audit records for trusted, potentially third-party, auditing of the full agent interaction chain while keeping privacy consideration as a first priority.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains while preserving user privacy or other sensitive data.
 
-The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
-
+The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (e.g. W3C Trace Context or other context identifiers), and privacy-protecting profiles of conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
 Further, while the entities of a complex agents or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
