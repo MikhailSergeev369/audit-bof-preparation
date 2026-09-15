@@ -7,12 +7,7 @@ This introduces challenges for auditability, accountability, and transparency, i
 * Difficulty attributing actions to a specific user, agent instance, or delegation context
 * Loss of visibility across long-running or distributed workflows
 * Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
-* Cross-domain interactions lack interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions
-
-Agents participate in two distinct classes of interactions that must be audited:
-
-* User-facing interactions, such as prompts, conversations, and approvals, capturing user intent and human-in-the-loop decisions
-* System-facing interactions, such as API calls, tool usage, and delegation to other agents or services
+* Lack of interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions across domains
 
 Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
 
@@ -22,10 +17,13 @@ Auditing must also distinguish between user, agent, and service identities, and 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across agent interactions. This includes:
+
+* Enabling attribution of actions to a specific user, agent instance, or delegation context
+* Capturing delegation chains, authorization state over time, and identity transitions
+* Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
-
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
 Further, while the entities of a complex agent or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
@@ -40,7 +38,8 @@ The AUDIT working group is expected to produce:
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals. This document might also identify needed protocol extensions. 
 
 2. **Audit Data Models and Semantics**
-One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent aspects of autonomous system (e.g., AI agents) behavior: e.g., interaction records, agent identity, delegation context, authorization state over time, or action provenance. If existing data models are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
+One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance).
+If existing data models are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 
 3. **Protocol Extensions or Profiles**
