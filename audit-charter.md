@@ -9,7 +9,7 @@ This introduces challenges for auditability, accountability, and transparency, i
 * Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
 * Cross-domain interactions lack interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions
 
-To support governance, compliance, transparency, and trust in such environments, auditing is required that collects and correlates evidence across participating domains rather than relying solely on local agent logs, where no single party has complete visibility into a multi-domain interaction. The scope of such auditing is the observable behavior of agents, including interactions, invoked actions, exchanged data, and resulting outcomes across trust boundaries, but not the auditing of the underlying AI model, training data, or inference mechanisms.
+To support governance, compliance, transparency, and trust in such environments, auditing is required that collects and correlates evidence across participating domains rather than relying solely on local agent logs, where no single party has complete visibility into a multi-domain interaction. The scope of such auditing is the observable behavior of agents, including user intent, agent or tool interactions, invoked or declined actions, exchanged data, and resulting outcomes across trust boundaries, but not the auditing of the underlying AI model, training data, or inference mechanisms.
 
 Agents participate in two distinct classes of interactions that must be audited:
 
