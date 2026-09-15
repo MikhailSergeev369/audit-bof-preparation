@@ -35,7 +35,7 @@ The AUDIT working group is expected to produce:
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals. This document might also identify needed protocol extensions. 
 
 2. **Audit Data Models and Semantics**
-One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent aspects of autonomous system (e.g., AI agents) behavior: e.g., interaction records, agent identity, delegation context, authorization state over time, or action provenance. If existing data model are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
+One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance). If existing data model are identified the RFC(s) might create profiles that scope them to a degree of disclosure that is appropriate for audits.
 The group will work on the minimal set of audit information and consider a registry to enable experimentation and fast deployment for additional data models.
 
 4. **Protocol Extensions or Profiles**
