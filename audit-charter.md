@@ -17,7 +17,7 @@ Auditing must also distinguish between user, agent, and service identities, and 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols, enabling collect and correlation of different kinds of audit records for trusted, potentially third-party, auditing of the full agent interaction chain while keeping privacy consideration as a first priority.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across agnet interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains while preserving user privacy or other sensitive data.
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across agent interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains while preserving user privacy or other sensitive data.
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and privacy-protecting profiles of conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
 
