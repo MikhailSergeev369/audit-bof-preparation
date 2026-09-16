@@ -24,7 +24,7 @@ The AUDIT working group will define interoperable mechanisms for auditing and ac
 
 The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
 
-The working group will compose published and in-progress IETF and W3C building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only an architecture, profiles, and the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
+The working group will compose published and in-progress building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (e.g. W3C Trace Context or other context identifiers), and conversation containers (vCon), and will define only an architecture including interfaces to and profiles of the auditing components, as well as the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent case.
 
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
