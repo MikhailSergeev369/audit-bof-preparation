@@ -41,13 +41,10 @@ The working group will treat privacy, confidentiality, selective disclosure and 
 Mechanisms defined by the working group are expected to support auditability without requiring indiscriminate disclosure of prompts, user content, personal data, or unrelated execution context.
 
 ## Deliverables
-The working group's data model and protocol specifications, including profiles, will state which claims their audit information can support, the evidence and assumptions needed to assess those claims, and what that information does not establish.
-
 The AUDIT working group is expected to produce:
 
 1. **Architecture for Autonomous Agent Auditing**
-An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions. 
-For the verifiability property stated above, the architecture will state what verification can establish, what it does not establish, and the assumptions it rests on.
+An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between inter-domain audit entities and signals. This document might also identify needed protocol extensions and describe what verification of audit information can establish, under what assumptions, and with what limitations.
 
 2. **Audit Data Models and Semantics**
 One or more Standards Track RFC(s) that identify and reuse existing or specify new IETF data models that can represent audit information about agents and delegated systems (e.g., interaction records, references to the identities of participating entities, delegation context, authorization state over time, or action provenance).
