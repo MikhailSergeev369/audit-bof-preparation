@@ -37,7 +37,7 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
 
 - Open source projects (if any) implementing this work:
   - Please see following issue on Github: https://github.com/mirjak/audit-bof-preparation/issues/9
-  - Also collaboration with logging frameworks like OpenTelemetry (TBD)
+  - Consider and discuss collaboration with logging frameworks, such as OpenTelemetry (TBD)
 
 ## Agenda
 - Intro and Motivation (10 mins)
