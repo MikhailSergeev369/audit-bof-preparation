@@ -46,4 +46,5 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
 - Draft charter: https://github.com/mirjak/audit-bof-preparation/blob/main/audit-charter.md
 - Relevant Internet-Drafts:
   - Architecture: https://www.ietf.org/archive/id/draft-kuehlewind-audit-architecture-00.html
-  - Solutions: Verifiable Agent Conversation Records: https://www.ietf.org/archive/id/draft-birkholz-verifiable-agent-conversations-00.html
+  - Solutions:
+    - Verifiable Agent Conversation Records: https://www.ietf.org/archive/id/draft-birkholz-verifiable-agent-conversations-00.html
