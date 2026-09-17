@@ -25,7 +25,7 @@ This includes:
 * Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows by extending or adapting existing communication protocols
 * Specify mechanisms and protocols to collect, aggregate, verify, and transparency log records, potentially by a third-party, independent auditor
 
-The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency logging (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
+The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparent logging (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
 Further, while the entities of a complex agent or workload system need to be identifiable, this group will not work on new identity primitives but rely on work in other groups or fora.
