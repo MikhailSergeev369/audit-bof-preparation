@@ -28,12 +28,16 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
 - Which (if any) modifications to existing protocols or practices are required:
   - Profiles for RATS and SCITT
   - Extensions to HTTP (conext header) and potentially oauth (conext in tokens)
+  - Use of identifier defined by AgentProto
+  - Profiling vcon Verifiable Agent Conversation Records (vacr)
 
 - Which (if any) entirely new protocols or practices are required:
   - Data model for records
+  - Protocol(s) to store an retrieve records in the record store
 
 - Open source projects (if any) implementing this work:
-  - Potentially logging frameworks like OpenTelemetry (TBD)
+  - Please see following issue on Github: https://github.com/mirjak/audit-bof-preparation/issues/9
+  - Also collaboration with logging frameworks like OpenTelemetry (TBD)
 
 ## Agenda
 - Intro and Motivation (10 mins)
