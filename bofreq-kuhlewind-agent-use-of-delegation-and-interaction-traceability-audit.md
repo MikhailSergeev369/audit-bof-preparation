@@ -33,7 +33,7 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
 
 - Which (if any) entirely new protocols or practices are required:
   - Data model for records
-  - Protocol(s) to store an retrieve records in the record store
+  - Protocol(s) to store and retrieve records in the record store
 
 - Open source projects (if any) implementing this work:
   - Please see following issue on Github: https://github.com/mirjak/audit-bof-preparation/issues/9
