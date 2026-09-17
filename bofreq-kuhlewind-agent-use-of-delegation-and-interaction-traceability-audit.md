@@ -29,7 +29,7 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
   - Profiles for RATS and SCITT
   - Extensions to HTTP (conext header) and potentially oauth (conext in tokens)
   - Reuse of identifiers proposed by AgentProto
-  - Profiling vcon Verifiable Agent Conversation Records (vacr)
+  - Profiling vCon WG Verifiable Agent Conversation Records (vacr)
 
 - Which (if any) entirely new protocols or practices are required:
   - Data model for records
