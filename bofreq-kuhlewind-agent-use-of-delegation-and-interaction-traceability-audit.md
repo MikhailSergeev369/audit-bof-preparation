@@ -40,7 +40,13 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
 ## Agenda
 - Intro and Motivation (10 mins)
 - Architecture overview und use cases (20 mins)
+  - Overview
+  - User e-commerce use case
+  - Auditing in Identify Management systems
+  - Tracking Production Ticketing systems
 - Relation to other IETF work (10 mins)
+  - Profiling Verifiable Agent Conversation Records (con)
+  - SCITT profiling
 - Review of proposed charter and discussion (45 mins)
 
 ## Links to the mailing list, draft charter if any (for WG-forming BoF), relevant Internet-Drafts, etc.
